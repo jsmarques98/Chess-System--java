@@ -17,5 +17,3 @@ H
 src/boardgame/Board.java,e/4/e4b0a6df6d57bc0ccb9e957539275a4cbde2513e
 L
 src/chess/ChessPosition.java,9/0/90a7f058c20369970d1f5d1c161ad421280924ef
-I
-src/chess/ChessPiece.java,7/1/71903bb1710ecb2497d05dbcfd95a7ebafcda239
