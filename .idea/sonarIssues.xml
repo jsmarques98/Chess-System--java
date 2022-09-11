@@ -73,7 +73,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chess/pieces/Knight.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/chess/pieces/Pawn.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chess/pieces/Queen.java">
           <value>
             <set />
           </value>
