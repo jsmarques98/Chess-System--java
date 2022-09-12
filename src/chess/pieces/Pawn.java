@@ -39,14 +39,14 @@ public class Pawn extends ChessPiece {
             if (getBoard().positionExists(p) && isThereOpponentPiece(p)) {
                 mat[p.getRow()][p.getColumn()] = true;
             }
-            
+
             // #specialmove en passant white
-            if (position.getRow() == 3) {
-                Position left = new Position(position.getRow(), position.getColumn() - 1);
-                if (getBoard().positionExists(left) && isThereOpponentPiece(left) && getBoard().piece(left) == chessMatch.getEnPassantVulnerable()) {
-                    mat[left.getRow() - 1][left.getColumn()] = true;
+            if (position.getRow() == 3) {  //so posso fazer en passant com o peao branco quando ele esta na linha 3 da matriz
+                Position left = new Position(position.getRow(), position.getColumn() - 1);  // verificar se esta um peao preto na mesma linha na coluna anterior, -1
+                if (getBoard().positionExists(left) && isThereOpponentPiece(left) && getBoard().piece(left) == chessMatch.getEnPassantVulnerable()) { // verificar se esta uma peca openente na casa a esquerda e verificar se a peca pode ser capturada
+                    mat[left.getRow() - 1][left.getColumn()] = true;  //se puder ser capturada, o peao move para a casa a esquerda mas uma linha acima
                 }
-                Position right = new Position(position.getRow(), position.getColumn() + 1);
+                Position right = new Position(position.getRow(), position.getColumn() + 1);  // a msm coisa so que para a direita
                 if (getBoard().positionExists(right) && isThereOpponentPiece(right) && getBoard().piece(right) == chessMatch.getEnPassantVulnerable()) {
                     mat[right.getRow() - 1][right.getColumn()] = true;
                 }
@@ -72,7 +72,7 @@ public class Pawn extends ChessPiece {
             }
 
             // #specialmove en passant black
-            if (position.getRow() == 4) {
+            if (position.getRow() == 4) {  //so posso fazer en passant com o peao preto quando ele esta na linha 3 da matriz
                 Position left = new Position(position.getRow(), position.getColumn() - 1);
                 if (getBoard().positionExists(left) && isThereOpponentPiece(left) && getBoard().piece(left) == chessMatch.getEnPassantVulnerable()) {
                     mat[left.getRow() + 1][left.getColumn()] = true;

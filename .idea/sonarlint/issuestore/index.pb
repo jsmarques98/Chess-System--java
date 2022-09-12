@@ -15,8 +15,6 @@ L
 src/chess/ChessPosition.java,9/0/90a7f058c20369970d1f5d1c161ad421280924ef
 I
 src/chess/ChessPiece.java,7/1/71903bb1710ecb2497d05dbcfd95a7ebafcda239
-G
-src/application/UI.java,f/0/f00b20a2ba12c03e5a4a25b29cdf3cfe45d9a93c
 L
 src/chess/pieces/Bishop.java,e/b/eb7ad43a61e450b7ce09ff6a1411f820b9f2ca7d
 L
@@ -25,3 +23,5 @@ K
 src/chess/pieces/Queen.java,2/f/2ff52db0eaa8aaea00a4e5e34c71c7a0a213f15e
 H
 src/boardgame/Piece.java,f/7/f7c0d7b204933cce6c86f02bbcf5c27544898e79
+J
+src/chess/pieces/King.java,d/9/d9b3000faae84ba619d472bc343f9814addae9c3
